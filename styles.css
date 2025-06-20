@@ -31,6 +31,17 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Estilo personalizado para el botón de login */
+.btn-outline-light {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #000;
+  transform: scale(1.05);
+}
+
 /* Media Query - Cambia color de botones en móviles */
 @media (max-width: 576px) {
   .btn-primary {
