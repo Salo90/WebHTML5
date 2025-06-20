@@ -1,0 +1,51 @@
+/* Personalización del botón primario */
+
+.bg-primary {
+    background-color: #5f5c5c !important;
+    }
+.btn-primary {
+  background-color: #28a745;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+/* Personalización del botón primario */
+.btn-primary {
+  background-color: #28a745;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Efecto hover en las cards */
+.card.hover-zoom {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.hover-zoom:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Query - Cambia color de botones en móviles */
+@media (max-width: 576px) {
+  .btn-primary {
+    background-color: #1e7e34;
+  }
+}
+
+/* Animación suave al cargar la página */
+body {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

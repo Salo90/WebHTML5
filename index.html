@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ropa Deportiva - Fútbol</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#inicio">
+      <img src="assets/img/logo.png" alt="Logo FútbolStyle" width="mx-auto" height="30" class="d-inline-block align-text-top me-2">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <header id="inicio" class="bg-primary text-white py-5 text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Ropa Deportiva para Fútbol</h1>
+      <p class="lead">Camisetas, pantalones y accesorios de alta calidad para jugadores y fanáticos.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <!-- Productos Grid -->
+    <section id="productos" class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card shadow-sm hover-zoom">
+          <img src="assets/img/f1.png" class="card-img-top img-fluid" alt="Camiseta">
+          <div class="card-body">
+            <h3 class="card-title">Camiseta Profesional</h3>
+            <p class="card-text">Camisetas transpirables y resistentes para entrenamientos y partidos oficiales.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm hover-zoom">
+          <img src="assets/img/f2.png" class="card-img-top img-fluid" alt="Pantalón">
+          <div class="card-body">
+            <h3 class="card-title">Pantalón de Juego</h3>
+            <p class="card-text">Diseños aerodinámicos que ofrecen comodidad y libertad de movimiento.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm hover-zoom">
+          <img src="assets/img/f3.png" class="card-img-top img-fluid" alt="Medias">
+          <div class="card-body">
+            <h3 class="card-title">Medias Altas</h3>
+            <p class="card-text">Soporte y estilo para jugar con comodidad y profesionalismo en cada partido.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario -->
+    <section id="contacto" class="mb-5">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-5">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+        </div>
+        <div class="col-md-5">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="tu@email.com">
+        </div>
+        <div class="col-md-10">
+          <label for="comentarios" class="form-label">Comentarios</label>
+          <textarea class="form-control" id="comentarios" rows="4" placeholder="Escribe tus comentarios"></textarea>
+        </div>
+        <div class="col-md-10 text-center mt-3">
+          <button type="submit" class="btn btn-primary px-4 py-2">Enviar Mensaje</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Collapse Example -->
+    <section class="text-center">
+      <button class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#masInfo">
+        Más Información
+      </button>
+      <div id="masInfo" class="collapse mt-3">
+        <div class="card card-body bg-light d-inline-block w-75 mx-auto">
+          Ofrecemos productos de primera calidad para futbolistas amateurs y profesionales. ¡Visítanos o escríbenos para más detalles!
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4 text-center border-top">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Salo Sport. Todos los derechos reservados.</p>
+      <div class="mt-2">
+        <a href="#" class="text-decoration-none text-secondary me-3">Política de Privacidad</a>
+        <a href="#" class="text-decoration-none text-secondary">Términos de Uso</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
