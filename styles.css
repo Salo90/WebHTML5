@@ -42,6 +42,21 @@
   transform: scale(1.05);
 }
 
+/* Galería */
+#contenedorGaleria img {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+  border: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#contenedorGaleria img.seleccionada {
+  border: 3px solid #0d6efd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
 /* Media Query - Cambia color de botones en móviles */
 @media (max-width: 576px) {
   .btn-primary {
