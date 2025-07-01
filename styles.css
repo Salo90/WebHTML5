@@ -57,6 +57,20 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
+/* Estilos en formulario de validacion */
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.form-control.is-valid {
+  border-color: #28a745;
+}
+
+.error-message {
+  display: block;
+  margin-top: 4px;
+}
+
 /* Media Query - Cambia color de botones en móviles */
 @media (max-width: 576px) {
   .btn-primary {
