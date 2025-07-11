@@ -156,3 +156,42 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 0);
   });
 });
+
+
+// Arreglo con los productos iniciales
+const productos = [
+  { nombre: "Camiseta Profesional", precio: 8.00, descripcion: "Camisetas transpirables y resistentes." },
+  { nombre: "Pantalón de Juego", precio: 6.99, descripcion: "Diseños unicos y agradables." },
+  { nombre: "Medias Altas", precio: 2.00, descripcion: "Alicradas y resistentes." }
+];
+
+// Función para renderizar los productos en la lista
+function renderizarProductos() {
+  const lista = document.getElementById("listaProductos");
+  lista.innerHTML = ""; // Limpiar contenido previo
+
+  productos.forEach((producto, index) => {
+    const item = document.createElement("li");
+    item.className = "list-group-item mb-4";
+    item.innerHTML = `
+      <strong>${producto.nombre}</strong><br/>
+      <strong> Precio: </strong> $${producto.precio}<br/>
+      <strong> Descripción: </strong> ${producto.descripcion}
+    `;
+    lista.appendChild(item);
+  });
+}
+
+// Evento para agregar un nuevo producto
+document.getElementById("agregarBtn").addEventListener("click", () => {
+  const nuevoProducto = {
+    nombre: `Producto Extra ${productos.length + 1}`,
+    precio: (Math.random() * 50).toFixed(2),
+    descripcion: "Este es un producto agregado."
+  };
+  productos.push(nuevoProducto);
+  renderizarProductos();
+});
+
+// Renderizado inicial
+renderizarProductos();
