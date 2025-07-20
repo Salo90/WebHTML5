@@ -1,0 +1,29 @@
+/* Estilos en formulario de validacion */
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.form-control.is-valid {
+  border-color: #28a745;
+}
+
+.error-message {
+  display: block;
+  margin-top: 4px;
+}
+
+.error {
+      color: red;
+      font-size: 0.875em;
+}
+.contact-section {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      padding: 2rem;
+}
+
+.carousel-item img {
+  width: 1920px;
+  height: 700px;
+  object-fit: cover; /* Ajusta la imagen sin deformarse */
+}
